@@ -1,2 +1,1 @@
-# GetOutOfMyHead
-Get out of my head!
+[Get out of my head!](https://aozora.my.id/sayori)
