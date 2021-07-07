@@ -24,15 +24,20 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <div style="display: none;" id=hideAll>&nbsp;</div>
+  <div style="display: none;" id=hideAll><h3>Get out of my head!</h3></div>
   <script type="text/javascript">
     document.getElementById("hideAll").style.display = "block";
-    window.onload = function()
-    { document.getElementById("hideAll").style.display = "none"; }
+    window.onclick = function() {
+      document.getElementById("hideAll").style.display = "none";
+      document.getElementById("bgm").play();
+    }
   </script>
-  <img src="sayori.png" />
+  <img src="sayori.png" alt="Get out of my head!" />
   <video autoplay muted loop id="videoBackground">
     <source src="video.mp4" type="video/mp4">
   </video>
+  <audio id="bgm" autoplay loop>
+    <source src="bgm.ogg" type="audio/ogg">
+  </audio>
 </body>
 </html>
